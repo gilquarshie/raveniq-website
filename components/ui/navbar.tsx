@@ -28,17 +28,14 @@ export function Navbar() {
             <a href="#services" className="text-gray-800 text-sm font-semibold hover:text-blue-600 transition-colors duration-200">
               Services
             </a>
-            <a href="#case-studies" className="text-gray-800 text-sm font-semibold hover:text-blue-600 transition-colors duration-200">
-              Case Studies
+            <a href="#success-stories" className="text-gray-800 text-sm font-semibold hover:text-blue-600 transition-colors duration-200">
+              Success Stories
             </a>
             <a href="#pricing" className="text-gray-800 text-sm font-semibold hover:text-blue-600 transition-colors duration-200">
               Pricing
             </a>
             <a href="#about" className="text-gray-800 text-sm font-semibold hover:text-blue-600 transition-colors duration-200">
               About
-            </a>
-            <a href="#contact" className="text-gray-800 text-sm font-semibold hover:text-blue-600 transition-colors duration-200">
-              Contact
             </a>
           </div>
 
