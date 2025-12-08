@@ -1,0 +1,1709 @@
+import React from 'react'
+
+const ServicesPage = () => {
+  return (
+    <div className="bg-white dark:bg-neutral-950 text-gray-800 dark:text-neutral-100 antialiased">
+  <section className="bg-white dark:bg-neutral-950 px-6 py-16 sm:py-24 relative isolate antialiased overflow-hidden">
+    <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <div
+        className="h-[60vh] w-[60vh] rounded-full bg-gradient-to-br absolute -top-32 -left-32 from-blue-200 via-blue-100
+    to-blue-300 opacity-20 blur-2xl dark:opacity-10 dark:from-blue-600 dark:via-blue-500 dark:to-blue-700"
+      />
+      <div
+        className="h-[40vh] w-[50vh] rounded-full bg-gradient-to-tr absolute -bottom-20 right-10 from-blue-300
+    via-blue-200 to-blue-400 opacity-30 blur-3xl dark:opacity-10 dark:from-blue-700 dark:via-blue-600
+    dark:to-blue-800"
+      />
+      <div
+        className="h-[35vh] w-[45vh] rounded-full bg-gradient-to-b absolute top-28 left-1/4 from-blue-300 via-blue-200
+    to-blue-100 opacity-40 blur-3xl dark:h-[28vh] dark:from-blue-600 dark:via-blue-500 dark:to-blue-700
+    dark:opacity-15"
+      />
+    </div>
+    <div className="mx-auto text-center max-w-7xl">
+      <div
+        className="items-center px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950/30 mb-6 inline-flex border
+    border-blue-200 dark:border-blue-800"
+      >
+        <span className="text-sm font-medium text-blue-700 dark:text-blue-400">
+          Pricing Plans
+        </span>
+      </div>
+      <p className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight dark:text-white">
+        Simple, Transparent Pricing
+      </p>
+      <p className="text-lg sm:text-xl text-gray-600 mb-10 mx-auto dark:text-gray-400 max-w-3xl">
+        Choose a plan that fits your business and scale confidently with
+        automation.
+      </p>
+      <div
+        className="items-center bg-gray-100 dark:bg-neutral-900 rounded-full inline-flex p-1 border border-gray-200
+    dark:border-neutral-800"
+      >
+        <button
+          type="submit"
+          className="dark:text-white transition-all duration-200 px-6 py-2.5 rounded-full text-sm
+      font-semibold bg-white dark:bg-neutral-800 text-gray-900 shadow-sm"
+        >
+          Monthly
+        </button>
+        <button
+          type="submit"
+          className="dark:text-gray-400 transition-all duration-200 hover:text-gray-900
+      dark:hover:text-white px-6 py-2.5 rounded-full text-sm font-semibold text-gray-600"
+        >
+          Annual
+          <span className="ml-1 text-xs text-blue-600 dark:text-blue-400">
+            (Save 20%)
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section className="bg-white dark:bg-neutral-950 px-6 py-16 relative">
+    <div className="mx-auto max-w-7xl">
+      <div className="lg:grid-cols-3 lg:gap-6 grid grid-cols-1 gap-8">
+        <div
+          className="bg-white dark:bg-neutral-900 rounded-2xl border border-gray-200 dark:border-neutral-800 p-8
+      hover:shadow-xl transition-all duration-300 hover:scale-105"
+        >
+          <div className="mb-6">
+            <p className="text-2xl font-bold text-gray-900 mb-2 dark:text-white">
+              Starter
+            </p>
+            <p className="text-gray-600 text-sm dark:text-gray-400">
+              Perfect for small businesses getting into automation
+            </p>
+          </div>
+          <div className="mb-8">
+            <div className="items-baseline mb-2 flex">
+              <span className="text-5xl font-bold text-gray-900 dark:text-white">
+                $299
+              </span>
+              <span className="text-gray-600 ml-2 dark:text-gray-400">
+                /month
+              </span>
+            </div>
+            <p className="text-sm text-gray-500 dark:text-gray-500">
+              Billed monthly
+            </p>
+          </div>
+          <ul className="mb-8 space-y-4">
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_36EFOhGrs"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Up to 50 automation tasks per month
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_NovkJ8DzA"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                2 custom dashboards
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_tJZTCfNex"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Basic AI chatbot (500 interactions/month)
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_rjnuWJJML"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                5 system integrations
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_5YPZ5wRZ6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Email support (48-hour response)
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_jyIAZxoWJ"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Monthly performance reports
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_7IVTcuhBb"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Community access &amp; resources
+              </span>
+            </li>
+          </ul>
+          <button
+            type="submit"
+            className="dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all
+        duration-200 w-full bg-gray-900 dark:bg-white text-white py-3 px-6 rounded-lg font-semibold"
+          >
+            Get Started
+          </button>
+        </div>
+        <div
+          className="bg-gradient-to-b rounded-2xl shadow-2xl lg:scale-110 from-blue-600 to-blue-700 dark:from-blue-600
+      dark:to-blue-800 p-8 relative hover:shadow-blue-500/20 transition-all duration-300 scale-105"
+        >
+          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <span
+              className="bg-white dark:bg-blue-900 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold
+          tracking-wide shadow-lg dark:text-blue-300 uppercase"
+            >
+              Most Popular
+            </span>
+          </div>
+          <div className="mb-6">
+            <p className="text-2xl font-bold text-white mb-2">Growth</p>
+            <p className="text-blue-100 text-sm">
+              For SMEs that need advanced automation &amp; AI insights
+            </p>
+          </div>
+          <div className="mb-8">
+            <div className="items-baseline mb-2 flex">
+              <span className="text-5xl font-bold text-white">$699</span>
+              <span className="text-blue-100 ml-2">/month</span>
+            </div>
+            <p className="text-sm text-blue-200">Billed monthly</p>
+          </div>
+          <ul className="mb-8 space-y-4">
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-white mr-3 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_53rmyDSFo"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-white text-sm">
+                Up to 200 automation tasks per month
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-white mr-3 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_VDe3JP5mz"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-white text-sm">
+                Unlimited custom dashboards
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-white mr-3 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_lWHNf4hx7"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-white text-sm">
+                Advanced AI chatbot (5,000 interactions/month)
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-white mr-3 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_FXCGzzOLW"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-white text-sm">
+                20+ system integrations
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-white mr-3 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_Lyw1He4tT"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-white text-sm">
+                Priority support (24-hour response)
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-white mr-3 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_hcf8wajwN"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-white text-sm">
+                Weekly AI-powered insights &amp; analytics
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-white mr-3 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_GjLKJfZRu"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-white text-sm">
+                Dedicated onboarding specialist
+              </span>
+            </li>
+          </ul>
+          <button
+            type="submit"
+            className="hover:bg-blue-50 transition-all duration-200 w-full bg-white text-blue-700 py-3
+        px-6 rounded-lg font-semibold shadow-lg"
+          >
+            Get Started
+          </button>
+        </div>
+        <div
+          className="bg-white dark:bg-neutral-900 rounded-2xl border border-gray-200 dark:border-neutral-800 p-8
+      hover:shadow-xl transition-all duration-300 hover:scale-105"
+        >
+          <div className="mb-6">
+            <p className="text-2xl font-bold text-gray-900 mb-2 dark:text-white">
+              Enterprise
+            </p>
+            <p className="text-gray-600 text-sm dark:text-gray-400">
+              Custom, premium, scalable solutions for your business
+            </p>
+          </div>
+          <div className="mb-8">
+            <div className="items-baseline mb-2 flex">
+              <span className="text-5xl font-bold text-gray-900 dark:text-white">
+                Custom
+              </span>
+            </div>
+            <p className="text-sm text-gray-500 dark:text-gray-500">
+              Tailored to your needs
+            </p>
+          </div>
+          <ul className="mb-8 space-y-4">
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_01j14laf4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Unlimited automation tasks
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_E9z0eYCvM"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Custom dashboards &amp; reporting
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_No3EJcVIs"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Enterprise AI solutions &amp; chatbots
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_dNrSPwgPE"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Unlimited system integrations
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_4ObqeCeyl"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                24/7 dedicated support team
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_p8qfg2DIT"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                White-label solutions available
+              </span>
+            </li>
+            <li className="items-start flex">
+              <svg
+                className="w-5 h-5 text-blue-600 mr-3 mt-0.5 dark:text-blue-400 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_6HxlSQq1n"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span className="text-gray-700 text-sm dark:text-gray-300">
+                Dedicated account manager &amp; SLA
+              </span>
+            </li>
+          </ul>
+          <button
+            type="submit"
+            className="hover:bg-blue-700 dark:hover:bg-blue-700 transition-all duration-200 w-full
+        bg-blue-600 dark:bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold"
+          >
+            Talk to Sales
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="bg-gray-50 dark:bg-neutral-900 px-6 py-16 relative">
+    <div className="mx-auto max-w-7xl">
+      <div className="text-center mb-12">
+        <p className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 dark:text-white">
+          Compare Plans
+        </p>
+        <p className="text-lg text-gray-600 dark:text-gray-400">
+          Find the perfect fit for your business needs
+        </p>
+      </div>
+      <div className="overflow-x-auto">
+        <div className="inline-block min-w-full align-middle">
+          <div
+            className="bg-white dark:bg-neutral-950 rounded-2xl shadow-lg overflow-hidden border border-gray-200
+        dark:border-neutral-800"
+          >
+            <table className="min-w-full divide-y divide-gray-200 dark:divide-neutral-800">
+              <thead className="bg-gray-50 dark:bg-neutral-900">
+                <tr>
+                  <th
+                    scope="col"
+                    className="px-6 py-4 text-left text-sm font-semibold text-gray-900
+                dark:text-white"
+                  >
+                    Features
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-4 text-center text-sm font-semibold text-gray-900
+                dark:text-white"
+                  >
+                    Starter
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-4 text-center text-sm font-semibold text-blue-700 bg-blue-50
+                dark:bg-blue-950/30 dark:text-blue-400"
+                  >
+                    Growth
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-4 text-center text-sm font-semibold text-gray-900
+                dark:text-white"
+                  >
+                    Enterprise
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200 dark:divide-neutral-800">
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    Automation Tasks/Month
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    50 tasks
+                  </td>
+                  <td
+                    className="px-6 py-4 text-sm text-gray-900 text-center bg-blue-50/50 dark:bg-blue-950/10 font-medium
+                dark:text-white"
+                  >
+                    200 tasks
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    Unlimited
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    Custom Dashboards
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    2
+                  </td>
+                  <td
+                    className="px-6 py-4 text-sm text-gray-900 text-center bg-blue-50/50 dark:bg-blue-950/10 font-medium
+                dark:text-white"
+                  >
+                    Unlimited
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    Custom
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    AI Chatbot Interactions
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    500/month
+                  </td>
+                  <td
+                    className="px-6 py-4 text-sm text-gray-900 text-center bg-blue-50/50 dark:bg-blue-950/10 font-medium
+                dark:text-white"
+                  >
+                    5,000/month
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    Unlimited
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    System Integrations
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    5
+                  </td>
+                  <td
+                    className="px-6 py-4 text-sm text-gray-900 text-center bg-blue-50/50 dark:bg-blue-950/10 font-medium
+                dark:text-white"
+                  >
+                    20+
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    Unlimited
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    Support Response Time
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    48 hours
+                  </td>
+                  <td
+                    className="px-6 py-4 text-sm text-gray-900 text-center bg-blue-50/50 dark:bg-blue-950/10 font-medium
+                dark:text-white"
+                  >
+                    24 hours
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-600 text-center dark:text-gray-400">
+                    24/7 Priority
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    Performance Reports
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-blue-600 mx-auto dark:text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_Ucdq8wxu0"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center bg-blue-50/50 dark:bg-blue-950/10">
+                    <svg
+                      className="w-5 h-5 text-blue-600 mx-auto dark:text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_A3b8ZuUfg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-blue-600 mx-auto dark:text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_m1pG3XJZO"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    AI-Powered Insights
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-gray-300 mx-auto dark:text-gray-700"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_4W6WaCLXS"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center bg-blue-50/50 dark:bg-blue-950/10">
+                    <svg
+                      className="w-5 h-5 text-blue-600 mx-auto dark:text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_zBPSBB5oI"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-blue-600 mx-auto dark:text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_dYwsXC8in"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    Onboarding Support
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-gray-300 mx-auto dark:text-gray-700"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_bQXSVQ1q5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center bg-blue-50/50 dark:bg-blue-950/10">
+                    <svg
+                      className="w-5 h-5 text-blue-600 mx-auto dark:text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_YSJDfztic"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-blue-600 mx-auto dark:text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_s6JofPWGz"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    Dedicated Account Manager
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-gray-300 mx-auto dark:text-gray-700"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_fdMsj5y5m"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center bg-blue-50/50 dark:bg-blue-950/10">
+                    <svg
+                      className="w-5 h-5 text-gray-300 mx-auto dark:text-gray-700"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_WhIscjFwX"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-blue-600 mx-auto dark:text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_ItonCQbD6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm text-gray-700 font-medium dark:text-gray-300">
+                    White-Label Solutions
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-gray-300 mx-auto dark:text-gray-700"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_FdySXxuC2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center bg-blue-50/50 dark:bg-blue-950/10">
+                    <svg
+                      className="w-5 h-5 text-gray-300 mx-auto dark:text-gray-700"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_cWkT9aZuT"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <svg
+                      className="w-5 h-5 text-blue-600 mx-auto dark:text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      id="Windframe_PtpoKP4N2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="bg-white dark:bg-neutral-950 px-6 py-16 relative">
+    <div className="mx-auto max-w-7xl">
+      <div className="md:grid-cols-4 mb-16 grid grid-cols-2 gap-8">
+        <div className="text-center">
+          <div
+            className="w-16 h-16 mx-auto mb-4 bg-blue-100 dark:bg-blue-950/30 rounded-full items-center justify-center
+        flex"
+          >
+            <svg
+              className="w-8 h-8 text-blue-600 dark:text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_eJecVgrGz"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              />
+            </svg>
+          </div>
+          <p className="text-sm font-semibold text-gray-900 mb-1 dark:text-white">
+            99.9% Uptime
+          </p>
+          <p className="text-xs text-gray-600 dark:text-gray-400">
+            Enterprise-grade reliability
+          </p>
+        </div>
+        <div className="text-center">
+          <div
+            className="w-16 h-16 mx-auto mb-4 bg-blue-100 dark:bg-blue-950/30 rounded-full items-center justify-center
+        flex"
+          >
+            <svg
+              className="w-8 h-8 text-blue-600 dark:text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_rSSJe22x5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+              />
+            </svg>
+          </div>
+          <p className="text-sm font-semibold text-gray-900 mb-1 dark:text-white">
+            Secure &amp; Compliant
+          </p>
+          <p className="text-xs text-gray-600 dark:text-gray-400">
+            Bank-level encryption
+          </p>
+        </div>
+        <div className="text-center">
+          <div
+            className="w-16 h-16 mx-auto mb-4 bg-blue-100 dark:bg-blue-950/30 rounded-full items-center justify-center
+        flex"
+          >
+            <svg
+              className="w-8 h-8 text-blue-600 dark:text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_ifOdQGden"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
+          </div>
+          <p className="text-sm font-semibold text-gray-900 mb-1 dark:text-white">
+            Fast Integration
+          </p>
+          <p className="text-xs text-gray-600 dark:text-gray-400">
+            Setup in minutes
+          </p>
+        </div>
+        <div className="text-center">
+          <div
+            className="w-16 h-16 mx-auto mb-4 bg-blue-100 dark:bg-blue-950/30 rounded-full items-center justify-center
+        flex"
+          >
+            <svg
+              className="w-8 h-8 text-blue-600 dark:text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_6tvIenMxa"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+              />
+            </svg>
+          </div>
+          <p className="text-sm font-semibold text-gray-900 mb-1 dark:text-white">
+            24/7 Support
+          </p>
+          <p className="text-xs text-gray-600 dark:text-gray-400">
+            Always here to help
+          </p>
+        </div>
+      </div>
+      <div className="mb-12">
+        <p className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12 dark:text-white">
+          What Our Clients Say
+        </p>
+        <div className="md:grid-cols-3 grid grid-cols-1 gap-8">
+          <div
+            className="bg-white dark:bg-neutral-900 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
+        hover:shadow-lg transition-all duration-300"
+          >
+            <div className="items-center mb-4 flex">
+              <div className="text-yellow-400 flex">
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_Wvsg9O7cG"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_xzuCvscvL"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_zxCt7kC7V"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_AjXHVj9Hr"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_2BOakr3X8"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+            <p className="text-gray-700 mb-6 leading-relaxed dark:text-gray-300">
+              "RavenIQ Labs transformed our business operations. The automation
+              saved us 15 hours per week and the insights are invaluable."
+            </p>
+            <div className="items-center flex">
+              <img
+                alt="Client"
+                src="https://placehold.co/48x48"
+                className="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                  Amara Okafor
+                </p>
+                <p className="text-xs text-gray-600 dark:text-gray-400">
+                  CEO, TechFlow Solutions
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="bg-white dark:bg-neutral-900 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
+        hover:shadow-lg transition-all duration-300"
+          >
+            <div className="items-center mb-4 flex">
+              <div className="text-yellow-400 flex">
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_8BQJ4wbpg"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_X64X0qAfC"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_2MdSbbYvM"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_42OPtWX1L"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_JbgyBCeFX"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_30ed5UVp1"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+            <p className="text-gray-700 mb-6 leading-relaxed dark:text-gray-300">
+              "The AI chatbot handles 80% of our customer inquiries. The ROI was
+              evident within the first month. Highly recommend!"
+            </p>
+            <div className="items-center flex">
+              <img
+                alt="Client"
+                src="https://placehold.co/48x48"
+                className="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                  Kwame Mensah
+                </p>
+                <p className="text-xs text-gray-600 dark:text-gray-400">
+                  Founder, AfriCommerce
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="bg-white dark:bg-neutral-900 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
+        hover:shadow-lg transition-all duration-300"
+          >
+            <div className="items-center mb-4 flex">
+              <div className="text-yellow-400 flex">
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_PwALFBvro"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_pt5pNkAuD"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_mYa1XCfvR"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_0kI3x1bZg"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_c5uGhnWms"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_gECt72FnK"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+            <p className="text-gray-700 mb-6 leading-relaxed dark:text-gray-300">
+              "Data dashboards gave us clarity we never had before. Making
+              informed decisions is now second nature. Excellent service!"
+            </p>
+            <div className="items-center flex">
+              <img
+                alt="Client"
+                src="https://placehold.co/48x48"
+                className="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                  Zainab Ibrahim
+                </p>
+                <p className="text-xs text-gray-600 dark:text-gray-400">
+                  COO, Zenith Logistics
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="md:grid-cols-3 grid grid-cols-1 gap-6">
+        <div
+          className="bg-gradient-to-br rounded-xl from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20 p-6
+      border border-blue-200 dark:border-blue-800"
+        >
+          <div className="text-4xl font-bold text-blue-700 mb-2 dark:text-blue-400">
+            40%
+          </div>
+          <div className="text-sm font-semibold text-gray-900 mb-1 dark:text-white">
+            Cost Reduction
+          </div>
+          <p className="text-xs text-gray-600 dark:text-gray-400">
+            Retail company saved 40% in operational costs within 6 months
+          </p>
+        </div>
+        <div
+          className="bg-gradient-to-br rounded-xl from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20 p-6
+      border border-blue-200 dark:border-blue-800"
+        >
+          <div className="text-4xl font-bold text-blue-700 mb-2 dark:text-blue-400">
+            3x
+          </div>
+          <div className="text-sm font-semibold text-gray-900 mb-1 dark:text-white">
+            Revenue Growth
+          </div>
+          <p className="text-xs text-gray-600 dark:text-gray-400">
+            E-commerce business tripled revenue with automation
+          </p>
+        </div>
+        <div
+          className="bg-gradient-to-br rounded-xl from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20 p-6
+      border border-blue-200 dark:border-blue-800"
+        >
+          <div className="text-4xl font-bold text-blue-700 mb-2 dark:text-blue-400">
+            85%
+          </div>
+          <div className="text-sm font-semibold text-gray-900 mb-1 dark:text-white">
+            Time Saved
+          </div>
+          <p className="text-xs text-gray-600 dark:text-gray-400">
+            Service company reduced manual tasks by 85%
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="bg-gray-50 dark:bg-neutral-900 px-6 py-16 relative">
+    <div className="mx-auto max-w-4xl">
+      <div className="text-center mb-12">
+        <p className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 dark:text-white">
+          Frequently Asked Questions
+        </p>
+        <p className="text-lg text-gray-600 dark:text-gray-400">
+          Everything you need to know about our pricing
+        </p>
+      </div>
+      <div className="space-y-4">
+        <div
+          className="bg-white dark:bg-neutral-950 rounded-xl border border-gray-200 dark:border-neutral-800
+      overflow-hidden"
+        >
+          <button
+            type="submit"
+            className="flex hover:bg-gray-50 dark:hover:bg-neutral-900/50 transition-colors w-full px-6
+        py-5 text-left items-center justify-between"
+          >
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              What if I need a custom solution?
+            </span>
+            <svg
+              className="w-6 h-6 text-gray-600 dark:text-gray-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_z6ihzrGf4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div className="px-6 pb-5">
+            <p className="text-gray-600 dark:text-gray-400">
+              Our Enterprise plan is fully customizable to meet your specific
+              business needs. We work closely with you to design, implement, and
+              support solutions tailored to your workflows, integrations, and
+              objectives. Contact our sales team to discuss your requirements.
+            </p>
+          </div>
+        </div>
+        <div
+          className="bg-white dark:bg-neutral-950 rounded-xl border border-gray-200 dark:border-neutral-800
+      overflow-hidden"
+        >
+          <button
+            type="submit"
+            className="flex hover:bg-gray-50 dark:hover:bg-neutral-900/50 transition-colors w-full px-6
+        py-5 text-left items-center justify-between"
+          >
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              Do you offer onboarding support?
+            </span>
+            <svg
+              className="w-6 h-6 text-gray-600 dark:text-gray-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_8t21zjg3l"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div className="px-6 pb-5">
+            <p className="text-gray-600 dark:text-gray-400">
+              Yes! Growth and Enterprise plans include dedicated onboarding
+              support. We provide comprehensive training sessions,
+              documentation, and hands-on guidance to ensure your team gets up
+              to speed quickly. Starter plan users have access to our knowledge
+              base and email support.
+            </p>
+          </div>
+        </div>
+        <div
+          className="bg-white dark:bg-neutral-950 rounded-xl border border-gray-200 dark:border-neutral-800
+      overflow-hidden"
+        >
+          <button
+            type="submit"
+            className="flex hover:bg-gray-50 dark:hover:bg-neutral-900/50 transition-colors w-full px-6
+        py-5 text-left items-center justify-between"
+          >
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              Can I upgrade or downgrade anytime?
+            </span>
+            <svg
+              className="w-6 h-6 text-gray-600 dark:text-gray-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_kzXaFzgEr"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div className="px-6 pb-5">
+            <p className="text-gray-600 dark:text-gray-400">
+              Absolutely! You can upgrade your plan at any time and the change
+              will take effect immediately. Downgrades are processed at the end
+              of your current billing cycle to ensure you don't lose any paid
+              features prematurely.
+            </p>
+          </div>
+        </div>
+        <div
+          className="bg-white dark:bg-neutral-950 rounded-xl border border-gray-200 dark:border-neutral-800
+      overflow-hidden"
+        >
+          <button
+            type="submit"
+            className="flex hover:bg-gray-50 dark:hover:bg-neutral-900/50 transition-colors w-full px-6
+        py-5 text-left items-center justify-between"
+          >
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              What payment methods do you accept?
+            </span>
+            <svg
+              className="w-6 h-6 text-gray-600 dark:text-gray-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_fxzYVWxDN"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div className="px-6 pb-5">
+            <p className="text-gray-600 dark:text-gray-400">
+              We accept all major credit cards (Visa, Mastercard, American
+              Express), bank transfers, and mobile money payments for African
+              businesses. Enterprise clients can also request invoice billing
+              with NET30 payment terms.
+            </p>
+          </div>
+        </div>
+        <div
+          className="bg-white dark:bg-neutral-950 rounded-xl border border-gray-200 dark:border-neutral-800
+      overflow-hidden"
+        >
+          <button
+            type="submit"
+            className="flex hover:bg-gray-50 dark:hover:bg-neutral-900/50 transition-colors w-full px-6
+        py-5 text-left items-center justify-between"
+          >
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              Is there a free trial available?
+            </span>
+            <svg
+              className="w-6 h-6 text-gray-600 dark:text-gray-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_mwHMIc6Iv"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div className="px-6 pb-5">
+            <p className="text-gray-600 dark:text-gray-400">
+              Yes! We offer a 14-day free trial on all plans so you can explore
+              the features and see how RavenIQ Labs can transform your business.
+              No credit card required to start your trial.
+            </p>
+          </div>
+        </div>
+        <div
+          className="bg-white dark:bg-neutral-950 rounded-xl border border-gray-200 dark:border-neutral-800
+      overflow-hidden"
+        >
+          <button
+            type="submit"
+            className="flex hover:bg-gray-50 dark:hover:bg-neutral-900/50 transition-colors w-full px-6
+        py-5 text-left items-center justify-between"
+          >
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              What happens when I exceed my plan limits?
+            </span>
+            <svg
+              className="w-6 h-6 text-gray-600 dark:text-gray-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_agAhucVRw"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div className="px-6 pb-5">
+            <p className="text-gray-600 dark:text-gray-400">
+              We'll notify you when you're approaching your plan limits. You can
+              either upgrade to a higher tier or purchase add-on capacity. We
+              never interrupt your service without notice, and you'll always
+              have options to scale as needed.
+            </p>
+          </div>
+        </div>
+        <div
+          className="bg-white dark:bg-neutral-950 rounded-xl border border-gray-200 dark:border-neutral-800
+      overflow-hidden"
+        >
+          <button
+            type="submit"
+            className="flex hover:bg-gray-50 dark:hover:bg-neutral-900/50 transition-colors w-full px-6
+        py-5 text-left items-center justify-between"
+          >
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              How secure is my data?
+            </span>
+            <svg
+              className="w-6 h-6 text-gray-600 dark:text-gray-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_Fr0Gxoxit"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div className="px-6 pb-5">
+            <p className="text-gray-600 dark:text-gray-400">
+              We take security seriously. All data is encrypted in transit and
+              at rest using bank-level 256-bit encryption. We're compliant with
+              international data protection standards and perform regular
+              security audits. Your data is yours, and we never share it with
+              third parties.
+            </p>
+          </div>
+        </div>
+        <div
+          className="bg-white dark:bg-neutral-950 rounded-xl border border-gray-200 dark:border-neutral-800
+      overflow-hidden"
+        >
+          <button
+            type="submit"
+            className="flex hover:bg-gray-50 dark:hover:bg-neutral-900/50 transition-colors w-full px-6
+        py-5 text-left items-center justify-between"
+          >
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              Do you offer refunds?
+            </span>
+            <svg
+              className="w-6 h-6 text-gray-600 dark:text-gray-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_VmqvLvOLI"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div className="px-6 pb-5">
+            <p className="text-gray-600 dark:text-gray-400">
+              We offer a 30-day money-back guarantee for first-time customers.
+              If you're not satisfied with our service within the first 30 days,
+              contact us for a full refund—no questions asked. We want you to
+              feel confident in choosing RavenIQ Labs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="bg-white dark:bg-neutral-950 px-6 py-20 relative isolate antialiased overflow-hidden">
+    <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <div
+        className="h-[50vh] w-[50vh] rounded-full bg-gradient-to-br absolute top-0 left-1/2 transform -translate-x-1/2
+    from-blue-200 via-blue-300 to-blue-400 opacity-20 blur-3xl dark:opacity-10 dark:from-blue-600
+    dark:via-blue-500 dark:to-blue-700"
+      />
+    </div>
+    <div className="mx-auto text-center max-w-4xl">
+      <p className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 dark:text-white">
+        Ready to Transform Your Business?
+      </p>
+      <p className="text-lg sm:text-xl text-gray-600 mb-10 mx-auto dark:text-gray-400 max-w-2xl">
+        Join hundreds of African businesses leveraging automation and AI to
+        scale faster and work smarter.
+      </p>
+      <div className="sm:flex-row justify-center flex flex-col gap-4">
+        <button
+          type="submit"
+          className="hover:bg-blue-700 dark:hover:bg-blue-700 transition-all duration-200
+      hover:shadow-xl px-8 py-4 bg-blue-600 dark:bg-blue-600 text-white rounded-lg font-semibold text-lg
+      shadow-lg"
+        >
+          Start Free Trial
+        </button>
+        <button
+          type="submit"
+          className="dark:text-white hover:bg-gray-200 dark:hover:bg-neutral-800 transition-all
+      duration-200 border border-gray-200 dark:border-neutral-800 px-8 py-4 bg-gray-100 dark:bg-neutral-900
+      text-gray-900 rounded-lg font-semibold text-lg"
+        >
+          Schedule a Demo
+        </button>
+      </div>
+      <p className="mt-6 text-sm text-gray-500 dark:text-gray-500">
+        No credit card required • Cancel anytime • 14-day free trial
+      </p>
+    </div>
+  </section>
+</div>
+
+  )
+}
+
+export default ServicesPage;
