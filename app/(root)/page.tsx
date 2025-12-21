@@ -173,189 +173,262 @@ export default function HomePage() {
       </div>
     </div>
   </section>
-   <section className="bg-white dark:bg-neutral-950 py-20">
+
+  
+  {/* Integrated DIgital Ecosystem */}
+  <section className="bg-gray-50 dark:bg-neutral-900 py-20" id="solutions">
     <div className="mx-auto px-6 max-w-7xl">
       <div className="text-center mb-16">
         <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 dark:text-white">
-          Why Choose RavenIQ Labs
+          Integrated Digital Ecosystem
         </p>
         <p className="text-lg text-gray-600 mx-auto dark:text-neutral-400 max-w-3xl">
-          We understand the unique challenges facing businesses and
-          deliver solutions that actually work
+          A comprehensive suite of interconnected solutions designed to work
+          seamlessly together
         </p>
       </div>
-      <div className="md:grid-cols-3 mb-16 grid gap-8">
-        <div className="text-center">
-          <div
-            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
-        flex"
-          >
-            <svg
-              className="w-10 h-10 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_SbPCtUa6M"
+      <div className="lg:grid-cols-2 mb-12 grid gap-8">
+        <div className="bg-white dark:bg-neutral-950 rounded-2xl p-10 border border-gray-200 dark:border-neutral-800">
+          <div className="items-start flex space-x-6">
+            <div
+              className="w-16 h-16 bg-gradient-to-br rounded-2xl items-center justify-center from-blue-500 to-blue-700
+          flex flex-shrink-0"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
+              <svg
+                className="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_lzFXe1S22"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+                Data Collection Systems
+              </p>
+              <p className="text-gray-600 mb-4 dark:text-neutral-400">
+                Capture, organize, and manage business data efficiently with our
+                intuitive collection tools designed for field and office use.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Form Builders
+                </span>
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Mobile Data Entry
+                </span>
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Validation Rules
+                </span>
+              </div>
+            </div>
           </div>
-          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-            Localized for West Africa
-          </p>
-          <p className="text-gray-600 dark:text-neutral-400">
-            Built specifically for the Ghanaian and market with
-            local payment integrations and regional context.
-          </p>
         </div>
-        <div className="text-center">
-          <div
-            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
-        flex"
-          >
-            <svg
-              className="w-10 h-10 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_1WrEi6qLL"
+        <div className="bg-white dark:bg-neutral-950 rounded-2xl p-10 border border-gray-200 dark:border-neutral-800">
+          <div className="items-start flex space-x-6">
+            <div
+              className="w-16 h-16 bg-gradient-to-br rounded-2xl items-center justify-center from-blue-600 to-blue-800
+          flex flex-shrink-0"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
+              <svg
+                className="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_lkrtKfqOi"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+                Business Automation
+              </p>
+              <p className="text-gray-600 mb-4 dark:text-neutral-400">
+                Automate repetitive tasks, workflows, and business processes to
+                save time and reduce human error significantly.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Workflow Engine
+                </span>
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Email Automation
+                </span>
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Task Triggers
+                </span>
+              </div>
+            </div>
           </div>
-          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-            Affordable Pricing
-          </p>
-          <p className="text-gray-600 dark:text-neutral-400">
-            Fair and transparent pricing designed for SMEs. No hidden fees, no
-            surprises, just honest value for your investment.
-          </p>
         </div>
-        <div className="text-center">
-          <div
-            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
-        flex"
-          >
-            <svg
-              className="w-10 h-10 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_lyDMCplxE"
+        <div className="bg-white dark:bg-neutral-950 rounded-2xl p-10 border border-gray-200 dark:border-neutral-800">
+          <div className="items-start flex space-x-6">
+            <div
+              className="w-16 h-16 bg-gradient-to-br rounded-2xl items-center justify-center from-blue-500 to-blue-700
+          flex flex-shrink-0"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M13 10V3L4 14h7v7l9-11h-7z"
-              />
-            </svg>
+              <svg
+                className="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_AGF9uzMVm"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
+                />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+                Advanced Analytics
+              </p>
+              <p className="text-gray-600 mb-4 dark:text-neutral-400">
+                Transform your data into meaningful insights with powerful
+                analytics dashboards and reporting capabilities.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Live Dashboards
+                </span>
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Custom Charts
+                </span>
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Export Reports
+                </span>
+              </div>
+            </div>
           </div>
-          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-            Fast Implementation
-          </p>
-          <p className="text-gray-600 dark:text-neutral-400">
-            Get up and running quickly with our streamlined onboarding process
-            and dedicated implementation support team.
-          </p>
         </div>
-        <div className="text-center">
-          <div
-            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
-        flex"
-          >
-            <svg
-              className="w-10 h-10 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_qA36E8kuf"
+        <div className="bg-white dark:bg-neutral-950 rounded-2xl p-10 border border-gray-200 dark:border-neutral-800">
+          <div className="items-start flex space-x-6">
+            <div
+              className="w-16 h-16 bg-gradient-to-br rounded-2xl items-center justify-center from-blue-600 to-blue-800
+          flex flex-shrink-0"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-              />
-            </svg>
+              <svg
+                className="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                id="Windframe_WE0zX3qio"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+                Local Payment Gateway
+              </p>
+              <p className="text-gray-600 mb-4 dark:text-neutral-400">
+                Accept payments through mobile money platforms and local payment
+                methods your customers already use and trust.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  MTN Mobile Money
+                </span>
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  Vodafone Cash
+                </span>
+                <span
+                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
+              dark:text-blue-400"
+                >
+                  AirtelTigo
+                </span>
+              </div>
+            </div>
           </div>
-          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-            Fully Customizable
-          </p>
-          <p className="text-gray-600 dark:text-neutral-400">
-            Tailor every aspect of the platform to match your unique business
-            processes and operational requirements.
-          </p>
         </div>
-        <div className="text-center">
-          <div
-            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
-        flex"
-          >
-            <svg
-              className="w-10 h-10 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_ZZfL1bTRY"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-              />
-            </svg>
-          </div>
-          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-            Local Support Team
-          </p>
-          <p className="text-gray-600 dark:text-neutral-400">
-            Access our local support team who understand your business context
-            and can assist you in your preferred language.
-          </p>
-        </div>
-        <div className="text-center">
-          <div
-            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
-        flex"
-          >
-            <svg
-              className="w-10 h-10 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_zV4ciwH3R"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-              />
-            </svg>
-          </div>
-          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-            Secure &amp; Reliable
-          </p>
-          <p className="text-gray-600 dark:text-neutral-400">
-            Enterprise-grade security with regular backups, data encryption, and
-            compliance with international standards.
-          </p>
-        </div>
+      </div>
+      <div
+        className="bg-gradient-to-r rounded-2xl text-center text-white from-blue-600 to-blue-800 dark:from-blue-700
+    dark:to-blue-900 p-12"
+      >
+        <p className="text-3xl font-bold mb-4">
+          Everything Works Together Seamlessly
+        </p>
+        <p className="text-lg text-blue-100 mx-auto mb-8 max-w-3xl">
+          Our integrated ecosystem means all your tools communicate with each
+          other, eliminating data silos and manual transfers. One platform,
+          infinite possibilities.
+        </p>
+        <button
+          type="submit"
+          className="hover:bg-blue-50 transition-all transform hover:scale-105 bg-white text-blue-600
+      px-8 py-4 rounded-lg font-semibold"
+        >
+          Explore Our Ecosystem
+        </button>
       </div>
     </div>
   </section>
+
+
+
+    {/* Our core services */}
   <section className="bg-gray-50 dark:bg-neutral-900 py-20" id="services">
     <div className="mx-auto px-6 max-w-7xl">
       <div className="text-center mb-16">
@@ -821,256 +894,195 @@ export default function HomePage() {
       </div>
     </div>
   </section>
-  <section className="bg-gray-50 dark:bg-neutral-900 py-20" id="solutions">
+
+
+
+  {/* Why choose RavenIQ Labs */}
+   <section className="bg-white dark:bg-neutral-950 py-20">
     <div className="mx-auto px-6 max-w-7xl">
       <div className="text-center mb-16">
         <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 dark:text-white">
-          Integrated Digital Ecosystem
+          Why Choose RavenIQ Labs
         </p>
         <p className="text-lg text-gray-600 mx-auto dark:text-neutral-400 max-w-3xl">
-          A comprehensive suite of interconnected solutions designed to work
-          seamlessly together
+          We understand the unique challenges facing businesses and
+          deliver solutions that actually work
         </p>
       </div>
-      <div className="lg:grid-cols-2 mb-12 grid gap-8">
-        <div className="bg-white dark:bg-neutral-950 rounded-2xl p-10 border border-gray-200 dark:border-neutral-800">
-          <div className="items-start flex space-x-6">
-            <div
-              className="w-16 h-16 bg-gradient-to-br rounded-2xl items-center justify-center from-blue-500 to-blue-700
-          flex flex-shrink-0"
+      <div className="md:grid-cols-3 mb-16 grid gap-8">
+        <div className="text-center">
+          <div
+            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
+        flex"
+          >
+            <svg
+              className="w-10 h-10 text-blue-600 dark:text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_SbPCtUa6M"
             >
-              <svg
-                className="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                id="Windframe_lzFXe1S22"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-                Data Collection Systems
-              </p>
-              <p className="text-gray-600 mb-4 dark:text-neutral-400">
-                Capture, organize, and manage business data efficiently with our
-                intuitive collection tools designed for field and office use.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Form Builders
-                </span>
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Mobile Data Entry
-                </span>
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Validation Rules
-                </span>
-              </div>
-            </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
           </div>
+          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+            Localized for West Africa
+          </p>
+          <p className="text-gray-600 dark:text-neutral-400">
+            Built specifically for the Ghanaian and market with
+            local payment integrations and regional context.
+          </p>
         </div>
-        <div className="bg-white dark:bg-neutral-950 rounded-2xl p-10 border border-gray-200 dark:border-neutral-800">
-          <div className="items-start flex space-x-6">
-            <div
-              className="w-16 h-16 bg-gradient-to-br rounded-2xl items-center justify-center from-blue-600 to-blue-800
-          flex flex-shrink-0"
+        <div className="text-center">
+          <div
+            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
+        flex"
+          >
+            <svg
+              className="w-10 h-10 text-blue-600 dark:text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_1WrEi6qLL"
             >
-              <svg
-                className="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                id="Windframe_lkrtKfqOi"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-                Business Automation
-              </p>
-              <p className="text-gray-600 mb-4 dark:text-neutral-400">
-                Automate repetitive tasks, workflows, and business processes to
-                save time and reduce human error significantly.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Workflow Engine
-                </span>
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Email Automation
-                </span>
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Task Triggers
-                </span>
-              </div>
-            </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
           </div>
+          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+            Affordable Pricing
+          </p>
+          <p className="text-gray-600 dark:text-neutral-400">
+            Fair and transparent pricing designed for SMEs. No hidden fees, no
+            surprises, just honest value for your investment.
+          </p>
         </div>
-        <div className="bg-white dark:bg-neutral-950 rounded-2xl p-10 border border-gray-200 dark:border-neutral-800">
-          <div className="items-start flex space-x-6">
-            <div
-              className="w-16 h-16 bg-gradient-to-br rounded-2xl items-center justify-center from-blue-500 to-blue-700
-          flex flex-shrink-0"
+        <div className="text-center">
+          <div
+            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
+        flex"
+          >
+            <svg
+              className="w-10 h-10 text-blue-600 dark:text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_lyDMCplxE"
             >
-              <svg
-                className="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                id="Windframe_AGF9uzMVm"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-                />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-                Advanced Analytics
-              </p>
-              <p className="text-gray-600 mb-4 dark:text-neutral-400">
-                Transform your data into meaningful insights with powerful
-                analytics dashboards and reporting capabilities.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Live Dashboards
-                </span>
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Custom Charts
-                </span>
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Export Reports
-                </span>
-              </div>
-            </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
+            </svg>
           </div>
+          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+            Fast Implementation
+          </p>
+          <p className="text-gray-600 dark:text-neutral-400">
+            Get up and running quickly with our streamlined onboarding process
+            and dedicated implementation support team.
+          </p>
         </div>
-        <div className="bg-white dark:bg-neutral-950 rounded-2xl p-10 border border-gray-200 dark:border-neutral-800">
-          <div className="items-start flex space-x-6">
-            <div
-              className="w-16 h-16 bg-gradient-to-br rounded-2xl items-center justify-center from-blue-600 to-blue-800
-          flex flex-shrink-0"
+        <div className="text-center">
+          <div
+            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
+        flex"
+          >
+            <svg
+              className="w-10 h-10 text-blue-600 dark:text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_qA36E8kuf"
             >
-              <svg
-                className="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                id="Windframe_WE0zX3qio"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
-                Local Payment Gateway
-              </p>
-              <p className="text-gray-600 mb-4 dark:text-neutral-400">
-                Accept payments through mobile money platforms and local payment
-                methods your customers already use and trust.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  MTN Mobile Money
-                </span>
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  Vodafone Cash
-                </span>
-                <span
-                  className="px-3 py-1 bg-blue-50 dark:bg-blue-950/30 text-blue-600 text-sm rounded-full
-              dark:text-blue-400"
-                >
-                  AirtelTigo
-                </span>
-              </div>
-            </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+              />
+            </svg>
           </div>
+          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+            Fully Customizable
+          </p>
+          <p className="text-gray-600 dark:text-neutral-400">
+            Tailor every aspect of the platform to match your unique business
+            processes and operational requirements.
+          </p>
         </div>
-      </div>
-      <div
-        className="bg-gradient-to-r rounded-2xl text-center text-white from-blue-600 to-blue-800 dark:from-blue-700
-    dark:to-blue-900 p-12"
-      >
-        <p className="text-3xl font-bold mb-4">
-          Everything Works Together Seamlessly
-        </p>
-        <p className="text-lg text-blue-100 mx-auto mb-8 max-w-3xl">
-          Our integrated ecosystem means all your tools communicate with each
-          other, eliminating data silos and manual transfers. One platform,
-          infinite possibilities.
-        </p>
-        <button
-          type="submit"
-          className="hover:bg-blue-50 transition-all transform hover:scale-105 bg-white text-blue-600
-      px-8 py-4 rounded-lg font-semibold"
-        >
-          Explore Our Ecosystem
-        </button>
+        <div className="text-center">
+          <div
+            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
+        flex"
+          >
+            <svg
+              className="w-10 h-10 text-blue-600 dark:text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_ZZfL1bTRY"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+            </svg>
+          </div>
+          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+            Local Support Team
+          </p>
+          <p className="text-gray-600 dark:text-neutral-400">
+            Access our local support team who understand your business context
+            and can assist you in your preferred language.
+          </p>
+        </div>
+        <div className="text-center">
+          <div
+            className="w-20 h-20 bg-blue-100 dark:bg-blue-950/50 rounded-2xl items-center justify-center mx-auto mb-6
+        flex"
+          >
+            <svg
+              className="w-10 h-10 text-blue-600 dark:text-blue-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              id="Windframe_zV4ciwH3R"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              />
+            </svg>
+          </div>
+          <p className="text-2xl font-bold text-gray-900 mb-3 dark:text-white">
+            Secure &amp; Reliable
+          </p>
+          <p className="text-gray-600 dark:text-neutral-400">
+            Enterprise-grade security with regular backups, data encryption, and
+            compliance with international standards.
+          </p>
+        </div>
       </div>
     </div>
   </section>
- 
+  
+  {/* Trusted by Leading SMEs */}
   <section className="bg-gray-50 dark:bg-neutral-900 py-20">
     <div className="mx-auto px-6 max-w-7xl">
       <div className="text-center mb-16">
@@ -1277,6 +1289,8 @@ export default function HomePage() {
       </div>
     </div>
   </section>
+
+  {/* Ready to Transform Your Business */}
   <section className="bg-white dark:bg-neutral-950 py-20">
     <div className="mx-auto px-6 max-w-5xl">
       <div
@@ -1312,186 +1326,6 @@ export default function HomePage() {
           <p className="text-sm text-blue-200 mt-6">
             No credit card required • Free 30-day trial • Cancel anytime
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section className="bg-gray-50 dark:bg-neutral-900 py-20" id="contact">
-    <div className="mx-auto px-6 max-w-7xl">
-      <div className="md:grid-cols-2 grid gap-16">
-        <div>
-          <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 dark:text-white">
-            Get in Touch
-          </p>
-          <p className="text-lg text-gray-600 mb-8 dark:text-neutral-400">
-            Have questions? Our team is here to help you find the perfect
-            solution for your business needs.
-          </p>
-          <div className="space-y-6">
-            <div className="items-start flex space-x-4">
-              <div
-                className="w-12 h-12 bg-blue-100 dark:bg-blue-950/50 rounded-xl items-center justify-center flex
-            flex-shrink-0"
-              >
-                <svg
-                  className="w-6 h-6 text-blue-600 dark:text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  id="Windframe_s9PJhlZik"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900 mb-1 dark:text-white">
-                  Phone
-                </p>
-                <p className="text-gray-600 dark:text-neutral-400">
-                  +233 24 123 4567
-                </p>
-                <p className="text-gray-600 dark:text-neutral-400">
-                  +233 20 987 6543
-                </p>
-              </div>
-            </div>
-            <div className="items-start flex space-x-4">
-              <div
-                className="w-12 h-12 bg-blue-100 dark:bg-blue-950/50 rounded-xl items-center justify-center flex
-            flex-shrink-0"
-              >
-                <svg
-                  className="w-6 h-6 text-blue-600 dark:text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  id="Windframe_krTYVz4A6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900 mb-1 dark:text-white">
-                  Email
-                </p>
-                <p className="text-gray-600 dark:text-neutral-400">
-                  info@raveniqlab.com
-                </p>
-                <p className="text-gray-600 dark:text-neutral-400">
-                  support@raveniqlab.com
-                </p>
-              </div>
-            </div>
-            <div className="items-start flex space-x-4">
-              <div
-                className="w-12 h-12 bg-blue-100 dark:bg-blue-950/50 rounded-xl items-center justify-center flex
-            flex-shrink-0"
-              >
-                <svg
-                  className="w-6 h-6 text-blue-600 dark:text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  id="Windframe_abpoAtWJk"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900 mb-1 dark:text-white">
-                  Address
-                </p>
-                <p className="text-gray-600 dark:text-neutral-400">
-                  123 Independence Avenue
-                </p>
-                <p className="text-gray-600 dark:text-neutral-400">
-                  Accra, Ghana
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-white dark:bg-neutral-950 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800">
-          <form className="space-y-6">
-            <div>
-              <label className="text-sm font-semibold text-gray-900 mb-2 block dark:text-white">
-                Full Name
-              </label>
-              <input
-                type="text"
-                placeholder="John Doe"
-                className="border border-gray-300 dark:border-neutral-700
-            focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent dark:text-white
-            w-full px-4 py-3 bg-gray-50 dark:bg-neutral-900 rounded-lg text-gray-900"
-              />
-            </div>
-            <div>
-              <label className="text-sm font-semibold text-gray-900 mb-2 block dark:text-white">
-                Email Address
-              </label>
-              <input
-                type="email"
-                placeholder="john@company.com"
-                className="border border-gray-300 dark:border-neutral-700
-            focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent dark:text-white
-            w-full px-4 py-3 bg-gray-50 dark:bg-neutral-900 rounded-lg text-gray-900"
-              />
-            </div>
-            <div>
-              <label className="text-sm font-semibold text-gray-900 mb-2 block dark:text-white">
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                placeholder="+233 24 123 4567"
-                className="border border-gray-300 dark:border-neutral-700
-            focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent dark:text-white
-            w-full px-4 py-3 bg-gray-50 dark:bg-neutral-900 rounded-lg text-gray-900"
-              />
-            </div>
-            <div>
-              <label className="text-sm font-semibold text-gray-900 mb-2 block dark:text-white">
-                Message
-              </label>
-              <textarea
-                rows={4}
-                placeholder="Tell us about your project..."
-                className="w-full px-4 py-3
-            bg-gray-50 dark:bg-neutral-900 rounded-lg text-gray-900 border border-gray-300 dark:border-neutral-700
-            focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 focus:border-transparent
-            dark:text-white"
-                defaultValue={""}
-              />
-            </div>
-            <button
-              type="submit"
-              className="hover:bg-blue-700 dark:hover:bg-blue-600 transition-all w-full bg-blue-600
-          dark:bg-blue-700 text-white px-6 py-4 rounded-lg font-semibold"
-            >
-              Send Message
-            </button>
-          </form>
         </div>
       </div>
     </div>
