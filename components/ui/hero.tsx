@@ -17,7 +17,6 @@ export function Hero() {
                                 className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
                                 >
                                     Get Started
-
                             </a>
                             <a
                                 href="#contact"
