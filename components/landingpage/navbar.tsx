@@ -56,21 +56,21 @@ export const Navbar = () => {
             Services
           </a>
           <a
-            href="/nwjANoctGVsuGK52gdq9#about"
+            href="/about"
             className="text-gray-600 dark:text-neutral-400 hover:text-blue-600
         dark:hover:text-blue-400 transition-colors"
           >
             About
           </a>
           <a
-            href="/nwjANoctGVsuGK52gdq9#solutions"
+            href="/success_stories"
             className="text-gray-600 dark:text-neutral-400 hover:text-blue-600
         dark:hover:text-blue-400 transition-colors"
           >
             Success Stories
           </a>
           <a
-            href="/nwjANoctGVsuGK52gdq9#contact"
+            href="/contact"
             className="text-gray-600 dark:text-neutral-400 hover:text-blue-600
             dark:hover:text-blue-400 transition-colors"
             >
