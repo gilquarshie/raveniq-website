@@ -28,7 +28,7 @@ export default function ServicesPage() {
         const data = await client.fetch(`
           *[_type == "services"] {
             ...,
-            "image_url": main_imxage.asset->url
+            "image_url": main_image.asset->url,
           }
         `);
         setServices(data);

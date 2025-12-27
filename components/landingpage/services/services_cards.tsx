@@ -30,12 +30,12 @@ export default function ServicesCard({services}: {services: any[]}) {
   {/* Background Image */}
   {service.image_url && (
     <div className="absolute inset-0">
-      <img 
+      <Image 
         src={service.image_url} 
         alt={service.title} 
-        fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="object-cover w-full h-full"
+        layout="fill"
+        objectFit="cover"
+        className="w-full h-full"
       />
     </div>
   )}
