@@ -79,13 +79,13 @@ export const Navbar = () => {
             <div className='hover:bg-neutral-900 p-2 rounded-full cursor-pointer' onClick={toggleTheme}>
               {theme === "dark" ? <Sun className='text-amber-500' size={18}/> : <Moon className='text-blue-500' size={18}/>}
             </div>
-          <button
-            type="submit"
+          <a
+            href="/get_started"
             className="hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors bg-blue-600
         dark:bg-blue-700 text-white px-6 py-2 rounded-lg"
           >
             Get Started
-          </button>
+          </a>
         </div>
         <button
           type="submit"

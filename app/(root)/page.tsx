@@ -1,6 +1,17 @@
 import { BriefcaseBusiness, Percent } from "lucide-react";
+import { client } from "@/sanity/lib/client";
 
-export default function HomePage() {
+async function FetchServices(){
+  try{
+    return await client.fetch(`*[_type == "services"]`);
+  }catch(err: unknown){
+    console.error('Error fetching services:', err);
+  }
+}
+
+export default async function HomePage() {
+  const services = await FetchServices();
+
   return(
   <div className="bg-white dark:bg-neutral-950 text-gray-800 dark:text-neutral-100 antialiased">
   <section className="bg-white dark:bg-neutral-950 relative isolate overflow-hidden">
@@ -440,458 +451,47 @@ export default function HomePage() {
           operations and unlock unprecedented efficiency
         </p>
       </div>
-      <div className="md:grid-cols-3 grid gap-8">
+
+    {services.map((service:any, index:number) => (
+      <div key={index} className="md:grid-cols-3 grid gap-8">
         <div
           className="bg-white dark:bg-neutral-950 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
       hover:border-blue-500 dark:hover:border-blue-600 transition-all hover:shadow-xl"
         >
           <div className="w-14 h-14 bg-blue-100 dark:bg-blue-950/50 rounded-xl items-center justify-center mb-6 flex">
-            <svg
-              className="w-7 h-7 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_SXI1OAkzG"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-              />
-            </svg>
+          <img src="favicon.ico" alt="icon" className="w-5  h-8" />
           </div>
           <p className="text-2xl font-bold text-gray-900 mb-4 dark:text-white">
-            Website Development
+            {service?.title || "Service"}
           </p>
           <p className="text-gray-600 mb-6 dark:text-neutral-400">
-            Professional, responsive websites tailored to showcase your brand
-            and engage your customers effectively across all devices.
+              {service?.shortDescription || "Service Description"}
           </p>
+
           <ul className="space-y-3">
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_nzxTHwQbD"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Custom Design
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_Yk81Tt83O"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Mobile Optimized
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_Ufv8XbT2c"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              SEO Ready
-            </li>
+            {service?.features?.map((feature:any, index:number) => (
+              <a key={index}   href={`/services/${service.slug.current}`}>
+                <li className="items-center text-gray-700 flex dark:text-neutral-300">
+                <svg
+                  className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  id="Windframe_nzxTHwQbD"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                {feature.title || "Feature"}
+              </li>  
+              </a>
+            ))}
           </ul>
         </div>
-        <div
-          className="bg-white dark:bg-neutral-950 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
-      hover:border-blue-500 dark:hover:border-blue-600 transition-all hover:shadow-xl"
-        >
-          <div className="w-14 h-14 bg-blue-100 dark:bg-blue-950/50 rounded-xl items-center justify-center mb-6 flex">
-            <svg
-              className="w-7 h-7 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_gWLDaUx5r"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-              />
-            </svg>
-          </div>
-          <p className="text-2xl font-bold text-gray-900 mb-4 dark:text-white">
-            Mobile Applications
-          </p>
-          <p className="text-gray-600 mb-6 dark:text-neutral-400">
-            Native and cross-platform mobile apps that bring your business
-            directly to your customers' fingertips with seamless experiences.
-          </p>
-          <ul className="space-y-3">
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_8hmj96R3l"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              iOS &amp; Android
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_BvHlP6gwV"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Offline Support
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_vZOKbFL0U"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Push Notifications
-            </li>
-          </ul>
         </div>
-        <div
-          className="bg-white dark:bg-neutral-950 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
-      hover:border-blue-500 dark:hover:border-blue-600 transition-all hover:shadow-xl"
-        >
-          <div className="w-14 h-14 bg-blue-100 dark:bg-blue-950/50 rounded-xl items-center justify-center mb-6 flex">
-            <svg
-              className="w-7 h-7 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_HLIox6Mwx"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-              />
-            </svg>
-          </div>
-          <p className="text-2xl font-bold text-gray-900 mb-4 dark:text-white">
-            Data Analytics
-          </p>
-          <p className="text-gray-600 mb-6 dark:text-neutral-400">
-            Transform raw data into actionable insights with our advanced
-            analytics tools designed for the market context.
-          </p>
-          <ul className="space-y-3">
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_OayAQBoyw"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Real-time Dashboards
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_NaHwfWsAH"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Custom Reports
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_k6eOEOiXw"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Predictive Insights
-            </li>
-          </ul>
-        </div>
-        <div
-          className="bg-white dark:bg-neutral-950 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
-      hover:border-blue-500 dark:hover:border-blue-600 transition-all hover:shadow-xl"
-        >
-          <div className="w-14 h-14 bg-blue-100 dark:bg-blue-950/50 rounded-xl items-center justify-center mb-6 flex">
-            <svg
-              className="w-7 h-7 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_FRfQEwMDp"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-              />
-            </svg>
-          </div>
-          <p className="text-2xl font-bold text-gray-900 mb-4 dark:text-white">
-            Process Automation
-          </p>
-          <p className="text-gray-600 mb-6 dark:text-neutral-400">
-            Streamline your operations with intelligent automation solutions
-            that reduce manual work and increase productivity significantly.
-          </p>
-          <ul className="space-y-3">
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_pbtrFdIod"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Workflow Automation
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_ETfKmmPY7"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Task Scheduling
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_wmD8ylahM"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Integration APIs
-            </li>
-          </ul>
-        </div>
-        <div
-          className="bg-white dark:bg-neutral-950 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
-      hover:border-blue-500 dark:hover:border-blue-600 transition-all hover:shadow-xl"
-        >
-          <div className="w-14 h-14 bg-blue-100 dark:bg-blue-950/50 rounded-xl items-center justify-center mb-6 flex">
-            <svg
-              className="w-7 h-7 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_sl7rqmJrA"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-              />
-            </svg>
-          </div>
-          <p className="text-2xl font-bold text-gray-900 mb-4 dark:text-white">
-            Payment Integration
-          </p>
-          <p className="text-gray-600 mb-6 dark:text-neutral-400">
-            Seamlessly integrate local payment systems including mobile money
-            and regional payment gateways for smooth transactions.
-          </p>
-          <ul className="space-y-3">
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_ude5PADbQ"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Mobile Money
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_ctcBNyD8X"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Secure Transactions
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_WHtmMEDqv"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Multi-Currency
-            </li>
-          </ul>
-        </div>
-        <div
-          className="bg-white dark:bg-neutral-950 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
-      hover:border-blue-500 dark:hover:border-blue-600 transition-all hover:shadow-xl"
-        >
-          <div className="w-14 h-14 bg-blue-100 dark:bg-blue-950/50 rounded-xl items-center justify-center mb-6 flex">
-            <svg
-              className="w-7 h-7 text-blue-600 dark:text-blue-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              id="Windframe_LPjvgAJno"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-              />
-            </svg>
-          </div>
-          <p className="text-2xl font-bold text-gray-900 mb-4 dark:text-white">
-            Cloud Solutions
-          </p>
-          <p className="text-gray-600 mb-6 dark:text-neutral-400">
-            Reliable cloud infrastructure and hosting solutions that ensure your
-            digital assets are always accessible and secure.
-          </p>
-          <ul className="space-y-3">
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_0YewnOQEA"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              99.9% Uptime
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_duR6zj0P6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Auto Backups
-            </li>
-            <li className="items-center text-gray-700 flex dark:text-neutral-300">
-              <svg
-                className="w-5 h-5 text-blue-600 mr-3 dark:text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                id="Windframe_s4HPFaED4"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Scalable Storage
-            </li>
-          </ul>
-        </div>
-      </div>
+    ))}
     </div>
   </section>
 
