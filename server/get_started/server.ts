@@ -10,6 +10,7 @@ interface FormData{
     country: string;
     service: string;
     pricingPlan: string;
+    details: string;
 }
 
 interface response{
@@ -50,6 +51,7 @@ export default async function POST(formData: FormData) {
             country: formData.country,
             service: formData.service,
             pricingPlan: formData.pricingPlan,
+            details: formData.details
         });
 
         if(!saved_client){

@@ -45,7 +45,7 @@ export default async function AdminSignIn_Server(data: SignInData): Promise<retu
         const generatedToken = generateToken({
             id: account._id,
             email: account.email
-        });
+        }, remember);
 
         if(!generateToken){
             return{

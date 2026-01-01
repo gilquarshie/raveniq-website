@@ -21,7 +21,7 @@ export default function ServicesCard({services}: {services: any[]}) {
     }
 
   return (
-    <div>
+    <div className="space-y-10">
         {services.map((service, index)=> (
          <div 
   key={index} 

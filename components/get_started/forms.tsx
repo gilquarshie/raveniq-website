@@ -56,8 +56,7 @@ export default function GetStartedForms({ title, shortDescription, cta }: { titl
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    // Add your form submission logic here
+
   }
 
   return (

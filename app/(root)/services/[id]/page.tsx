@@ -505,7 +505,7 @@ const backgroundColors = [
         <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed dark:text-neutral-400">Check out some of our recent projects and see how we can help you transform your infrastructure.</p>
       </div>
       <div className='flex flex-wrap m-2 h-70 justify-center'>
-                {service.other_images.map((image:string, index:number) => {
+                {service.other_images?.map((image:string, index:number) => {
                   return(
                     <div key={index} className='hover:border-4 hover:border-blue-600 rounded-lg w-1/3 h-full m-5 transition-all'>
                         <img 

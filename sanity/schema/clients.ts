@@ -51,6 +51,11 @@ export const Clients = defineType({
             title: "Pricing Plan",
             type: "string",
         }),
+        defineField({
+            name: "details",
+            title: "Details",
+            type: "text",
+        }),
     ],
     
     preview: {
