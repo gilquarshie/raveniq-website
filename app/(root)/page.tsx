@@ -451,9 +451,9 @@ export default async function HomePage() {
           operations and unlock unprecedented efficiency
         </p>
       </div>
-
-    {services.map((service:any, index:number) => (
-      <div key={index} className="md:grid-cols-3 grid gap-8">
+    <div className="md:grid-cols-3 grid gap-8">
+        {services.map((service:any, index:number) => (
+      <div key={index} >
         <div
           className="bg-white dark:bg-neutral-950 rounded-2xl p-8 border border-gray-200 dark:border-neutral-800
       hover:border-blue-500 dark:hover:border-blue-600 transition-all hover:shadow-xl"
@@ -492,7 +492,8 @@ export default async function HomePage() {
         </div>
         </div>
     ))}
-ss    </div>
+    </div>
+    </div>
   </section>
 
 
