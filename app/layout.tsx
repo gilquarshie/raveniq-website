@@ -1,40 +1,33 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-import { Inter, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/landingpage/navbar";
+import ToastProvider from "@/components/providers/toast-provider";
 import { ThemeProvider } from "@/components/context-provider/theme-provider";
-import Footer from "@/components/landingpage/footer";
 
-const inter = Inter({
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "RavenIQ Labs",
   description: "Intelligent systems for modern businesses.",
 };
 
-export default function RootLayout({
+export default function AppLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
-      <body className= "antialiased">
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-        <Navbar/>
+          <ToastProvider />
           {children}
-        <Footer/>
         </ThemeProvider>
       </body>
     </html>
